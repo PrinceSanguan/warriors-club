@@ -806,3 +806,24 @@ a:focus {
 .dropdown-item:hover {
   text-decoration: none;
 }
+
+
+.header_bottom {
+  position: sticky;
+  top: 0;
+  z-index: 1020; /* Ensure the navbar stays on top */
+  background-color: #fff; /* Set a solid background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-toggler {
+  z-index: 1030; /* Ensure the toggler stays clickable */
+  position: sticky;
+}
+

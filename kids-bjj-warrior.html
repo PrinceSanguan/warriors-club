@@ -764,18 +764,49 @@
 <!-- Bootstrap JS (version 4.3.1) -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script>
-  document.querySelectorAll('.nav-item.dropdown').forEach((dropdown) => {
-    const toggle = dropdown.querySelector('.nav-link.dropdown-toggle');
-    const menu = dropdown.querySelector('.dropdown-menu');
+  document.addEventListener('DOMContentLoaded', function () {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.getElementById('navbarSupportedContent');
+    const dropdownToggle = document.getElementById('navbarDropdown');
+    let lastScrollTop = 0; 
   
-    toggle.addEventListener('click', (e) => {
-      e.preventDefault();
-      const isOpen = menu.style.display === 'block';
-      menu.style.display = isOpen ? 'none' : 'block';
-      menu.style.opacity = isOpen ? '0' : '1';
-      menu.style.transform = isOpen ? 'translateY(-10px)' : 'translateY(0)';
+   
+    dropdownToggle.addEventListener('click', function (event) {
+      event.stopPropagation(); 
+      const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
+      dropdownToggle.setAttribute('aria-expanded', !isExpanded);
+    });
+  
+    de
+    document.addEventListener('click', function (event) {
+      if (!navbarCollapse.contains(event.target) && navbarCollapse.classList.contains('show')) {
+        navbarToggler.click();
+      }
+    });
+  
+    
+    document.addEventListener('click', function (event) {
+      if (!dropdownToggle.contains(event.target) && dropdownToggle.getAttribute('aria-expanded') === 'true') {
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  
+    
+    window.addEventListener('scroll', function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (scrollTop > lastScrollTop) {
+        
+        if (navbarCollapse.classList.contains('show')) {
+          navbarToggler.click();
+        }
+      }
+  
+      // Update lastScrollTop
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
   });
+  
 </script>
 </body>
 </body>
