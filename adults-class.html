@@ -132,7 +132,7 @@
         <div class="header_bottom">
           <div class="container-fluid">
             <nav class="navbar navbar-expand-lg custom_nav-container">
-              <a class="navbar-brand" href="#home">Warrior Club</a>
+              <a class="navbar-brand" href="index.html">Warrior Club</a>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -161,11 +161,23 @@
                       Time Table <span class="sr-only"></span>
                     </a>
                   </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html#disciplines">
-                      Disciplines <span class="sr-only"></span>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Disciplines
                     </a>
-                  </li>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="kids-bjj-warrior.html">Kids BJJ (Warriors Club)</a>
+                      <a class="dropdown-item" href="kids-bjj-ima.html">Kids BJJ Class (IMA BJJ)</a>
+                      <a class="dropdown-item" href="adults-class.html">Adults No-gi Classes</a>
+                    </div>
+                  </li>                  
                   <li class="nav-item active">
                     <a class="nav-link" href="index.html#testimonials">
                       Testimonials <span class="sr-only"></span>
@@ -750,5 +762,20 @@
 
 <!-- Bootstrap JS (version 4.3.1) -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+<script>
+  document.querySelectorAll('.nav-item.dropdown').forEach((dropdown) => {
+    const toggle = dropdown.querySelector('.nav-link.dropdown-toggle');
+    const menu = dropdown.querySelector('.dropdown-menu');
+  
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isOpen = menu.style.display === 'block';
+      menu.style.display = isOpen ? 'none' : 'block';
+      menu.style.opacity = isOpen ? '0' : '1';
+      menu.style.transform = isOpen ? 'translateY(-10px)' : 'translateY(0)';
+    });
+  });
+</script>
+</body>
+</body>
 </html>
