@@ -256,7 +256,7 @@
         }
         
         .warrior-desc.active {
-            max-height: 500px;
+            max-height: 1000px;
             padding: 15px;
             border: 1px solid #dee2e6;
         }
@@ -272,6 +272,30 @@
             color: #666;
             line-height: 1.6;
         }
+    
+        .content-brief {
+            display: block;
+        }
+    
+        .content-full {
+            display: none;
+        }
+    
+        .read-more-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+    
+        .read-more-btn:hover {
+            background-color: #0056b3;
+        }
         
         @media (max-width: 768px) {
             .warrior-image {
@@ -284,71 +308,135 @@
                 grid-template-columns: 1fr;
             }
         }
-        </style>
-        
-        <div class="warrior-section">
-          <h1 style="color: #ffffff; text-align: center; font-weight: 700; font-size: 2.5rem; margin-bottom: 20px;">Kids BJJ Class (Warrior Club)</h1>
-          <h2 style="color: #ffffff; text-align: center; font-size: 2rem; margin-bottom: 15px;">What is Warrior Club?</h2>
-          <p style="color: #ffffff; text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 1.1rem; padding: 0 20px;">
-              Through structured classes and modern training concepts,
-              Warrior Club helps children harness their physical and
-              mental capabilities, boosting confidence and self-esteem.
-              Classes incorporate both Gi and No-Gi training, introducing
-              kids to the vibrant world of combat sports and martial arts.
-          </p>
-            
-            <div class="warrior-grid">
-                <!-- Image 1 -->
-                <div class="warrior-item">
-                    <img src="/assets/images/image2.png" alt="Warrior Image 1" class="warrior-image">
-                    <div class="warrior-desc">
-                        <h3>Brazilian Jiu Jitsu</h3>
+    </style>
+    
+    <div class="warrior-section">
+        <h1 style="color: #ffffff; text-align: center; font-weight: 700; font-size: 2.5rem; margin-bottom: 20px;">Kids BJJ Class (Warrior Club)</h1>
+        <h2 style="color: #ffffff; text-align: center; font-size: 2rem; margin-bottom: 15px;">What is Warrior Club?</h2>
+        <p style="color: #ffffff; text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.6; font-size: 1.1rem; padding: 0 20px;">
+            Through structured classes and modern training concepts,
+            Warrior Club helps children harness their physical and
+            mental capabilities, boosting confidence and self-esteem.
+            Classes incorporate both Gi and No-Gi training, introducing
+            kids to the vibrant world of combat sports and martial arts.
+        </p>
+          
+        <div class="warrior-grid">
+            <!-- Image 1 -->
+            <div class="warrior-item">
+                <img src="/assets/images/image2.png" alt="Warrior Image 1" class="warrior-image">
+                <div class="warrior-desc">
+                    <h3>Brazilian Jiu Jitsu</h3>
+                    <div class="content-brief">
                         <p>A dynamic martial art focusing on ground techniques and leverage. Our BJJ program helps kids develop confidence, discipline, and problem-solving skills through safe and engaging training.</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                    <div class="content-full">
+                        <p>Brazilian Jiu-Jitsu (BJJ) is a dynamic martial art that teaches kids how to defend themselves while promoting fitness, discipline, and mental strength. Unlike striking-based martial arts, BJJ focuses on leverage, technique, and problem-solving, making it accessible to kids of all sizes and abilities. Through learning practical self-defense and engaging in fun, structured sparring, children develop confidence, perseverance, and a sense of achievement. BJJ also instills important values like respect, teamwork, and humility, creating a foundation for positive character development both on and off the mats. At Warrior Club, we provide a supportive environment where kids can thrive while having fun and making new friends!</p>
+                        <button class="read-more-btn">Read Less</button>
                     </div>
                 </div>
-        
-                <!-- Image 2 -->
-                <div class="warrior-item">
-                    <img src="/assets/images/image3.png" alt="Warrior Image 2" class="warrior-image">
-                    <div class="warrior-desc">
-                        <h3>Wrestling</h3>
+            </div>
+    
+            <!-- Image 2 -->
+            <div class="warrior-item">
+                <img src="/assets/images/image3.png" alt="Warrior Image 2" class="warrior-image">
+                <div class="warrior-desc">
+                    <h3>Wrestling</h3>
+                    <div class="content-brief">
                         <p>Our wrestling program builds strength, agility, and mental toughness. Kids learn valuable lessons in determination and sportsmanship through structured drills and friendly competition.</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                    <div class="content-full">
+                        <p>  Wrestling is one of the oldest and most effective sports for
+                          developing physical and mental toughness in kids. It
+                          emphasizes balance, agility, and strength while teaching
+                          children how to overcome challenges through hard work and
+                          determination. Wrestling helps kids build resilience,
+                          self-confidence, and a never-give-up attitude that extends
+                          beyond the mat. Through drills, matches, and teamwork,
+                          children learn discipline, respect for others, and the value
+                          of effort and perseverance. At Warrior Club, our wrestling
+                          program offers a safe, fun, and energetic space for kids to
+                          develop their skills, stay active, and form lasting
+                          friendships!</p>
+                        <button class="read-more-btn">Read Less</button>
                     </div>
                 </div>
-        
-                <!-- Image 3 -->
-                <div class="warrior-item">
-                    <img src="/assets/images/image6.png" alt="Warrior Image 3" class="warrior-image">
-                    <div class="warrior-desc">
-                        <h3>Mixed Martial Arts</h3>
+            </div>
+    
+            <!-- Image 3 -->
+            <div class="warrior-item">
+                <img src="/assets/images/image6.png" alt="Warrior Image 3" class="warrior-image">
+                <div class="warrior-desc">
+                    <h3>Mixed Martial Arts</h3>
+                    <div class="content-brief">
                         <p>A comprehensive program combining various martial arts disciplines. Kids learn diverse techniques while developing coordination, discipline, and self-confidence.</p>
+                        <button class="read-more-btn">Read More</button>
+                    </div>
+                    <div class="content-full">
+                        <p> Mixed Martial Arts (MMA) is an exciting and well-rounded
+                          discipline that combines techniques from various martial
+                          arts, giving kids the opportunity to develop diverse skills
+                          in a safe and structured environment. MMA helps improve
+                          fitness, coordination, and self-discipline while teaching
+                          practical self-defense techniques. Beyond the physical
+                          benefits, MMA encourages confidence, resilience, and a
+                          positive mindset, as kids learn to set goals, handle
+                          challenges, and respect themselves and others. At Warrior
+                          Club, our kid-friendly MMA program focuses on fun, safety,
+                          and personal growth, empowering children to unlock their
+                          potential while making friends and staying active!</p>
+                        <button class="read-more-btn">Read Less</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Image click functionality
+        const images = document.querySelectorAll('.warrior-image');
         
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.warrior-image');
-            
-            images.forEach(image => {
-                image.addEventListener('click', function() {
-                    const desc = this.nextElementSibling;
-                    const isActive = desc.classList.contains('active');
-                    
-                    // Close all descriptions
-                    document.querySelectorAll('.warrior-desc').forEach(d => {
-                        d.classList.remove('active');
-                    });
-                    
-                    // Toggle clicked description if it wasn't already active
-                    if (!isActive) {
-                        desc.classList.add('active');
-                    }
+        images.forEach(image => {
+            image.addEventListener('click', function() {
+                const desc = this.nextElementSibling;
+                const isActive = desc.classList.contains('active');
+                
+                // Close all descriptions
+                document.querySelectorAll('.warrior-desc').forEach(d => {
+                    d.classList.remove('active');
                 });
+                
+                // Toggle clicked description if it wasn't already active
+                if (!isActive) {
+                    desc.classList.add('active');
+                }
             });
         });
-        </script>
+    
+        // Read More button functionality
+        const readMoreButtons = document.querySelectorAll('.read-more-btn');
+        
+        readMoreButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation(); // Prevent event from bubbling up to image click handler
+                const contentContainer = this.closest('.warrior-desc');
+                const briefContent = contentContainer.querySelector('.content-brief');
+                const fullContent = contentContainer.querySelector('.content-full');
+                
+                if (briefContent.style.display !== 'none') {
+                    briefContent.style.display = 'none';
+                    fullContent.style.display = 'block';
+                } else {
+                    briefContent.style.display = 'block';
+                    fullContent.style.display = 'none';
+                }
+            });
+        });
+    });
+    </script>
 
       <!-- Pre-loader HTML -->
       <div id="preloader" style="display: none">
@@ -670,8 +758,6 @@
     </style>
 
     <!-- end of info Section -->
-
-    <!-- Footer Section -->
     <!-- Footer Section -->
 <footer class="footer_section">
   <!-- Social Links -->

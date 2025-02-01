@@ -724,108 +724,28 @@
     <section id="discipline" class="discipline_section layout_padding">
       <div class="container">
         <div class="heading_container heading_center">
-          <h2 style="color: white">PROGRAMS</h2>
+          <h2>PROGRAMS</h2>
         </div>
 
         <div class="row justify-content-center">
-          <!-- Brazilian Jiu Jitsu -->
           <div class="col-lg-5 col-md-5 mb-4 discipline-wrapper">
             <a href="/kids-bjj-warrior.html" class="discipline-link">
               <div class="discipline-item rounded-3 shadow">
-                <img
-                  src="/assets/images/image6.png"
-                  class="img-fluid rounded-3"
-                  alt="Brazilian Jiu Jitsu"
-                />
+                <div class="image-container">
+                  <img
+                    src="/assets/images/image6.png"
+                    class="img-fluid rounded-3"
+                    alt="Brazilian Jiu Jitsu"
+                  />
+                </div>
                 <div class="discipline-detail p-3">
                   <h3 class="discipline-title">Kids Brazilian Jiu Jitsu</h3>
-                  <p class="discipline-description">
-                    Brazilian Jiu-Jitsu (BJJ) is a dynamic martial art that
-                    teaches kids how to defend themselves while promoting
-                    fitness, discipline, and mental strength. Unlike
-                    striking-based martial arts, BJJ focuses on leverage,
-                    technique, and problem-solving, making it accessible to kids
-                    of all sizes and abilities. Through learning practical
-                    self-defense and engaging in fun, structured sparring,
-                    children develop confidence, perseverance, and a sense of
-                    achievement. BJJ also instills important values like
-                    respect, teamwork, and humility, creating a foundation for
-                    positive character development both on and off the mats. At
-                    Warrior Club, we provide a supportive environment where kids
-                    can thrive while having fun and making new friends!
-                  </p>
-                  <p class="discipline-description">
-                    <strong>Head Coach:</strong> Sam Townend<br />
-                    A brown belt in Brazilian Jiu Jitsu with 9 years of
-                    experience, Sam has competed in renowned tournaments and has
-                    2 years of experience coaching children.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Wrestling -->
-          <div class="col-lg-5 col-md-5 mb-4 discipline-wrapper">
-            <a href="/kids-bjj-ima.html" class="discipline-link">
-              <div class="discipline-item rounded-3 shadow">
-                <img
-                  src="/assets/images/m2.png"
-                  class="img-fluid rounded-3"
-                  alt="Wrestling"
-                />
-                <div class="discipline-detail p-3">
-                  <h3 class="discipline-title">Wrestling</h3>
-                  <p class="discipline-description">
-                    Wrestling is one of the oldest and most effective sports for
-                    developing physical and mental toughness in kids. It
-                    emphasizes balance, agility, and strength while teaching
-                    children how to overcome challenges through hard work and
-                    determination. Wrestling helps kids build resilience,
-                    self-confidence, and a never-give-up attitude that extends
-                    beyond the mat. Through drills, matches, and teamwork,
-                    children learn discipline, respect for others, and the value
-                    of effort and perseverance. At Warrior Club, our wrestling
-                    program offers a safe, fun, and energetic space for kids to
-                    develop their skills, stay active, and form lasting
-                    friendships!
-                  </p>
-                  <p class="discipline-description">
-                    <strong>Head Coach:</strong> Sam Townend<br />
-                    A brown belt in Brazilian Jiu Jitsu, Sam is certified in
-                    Safeguarding in Martial Arts, First Aid, and holds BMABA
-                    qualifications.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!-- MMA -->
-          <div class="col-lg-5 col-md-5 mb-4 discipline-wrapper">
-            <a href="/adults-class.html" class="discipline-link">
-              <div class="discipline-item rounded-3 shadow">
-                <img
-                  src="/assets/images/image6.png"
-                  class="img-fluid rounded-3"
-                  alt="MMA"
-                />
-                <div class="discipline-detail p-3">
-                  <h3 class="discipline-title">MMA</h3>
-                  <p class="discipline-description">
-                    Mixed Martial Arts (MMA) is an exciting and well-rounded
-                    discipline that combines techniques from various martial
-                    arts, giving kids the opportunity to develop diverse skills
-                    in a safe and structured environment. MMA helps improve
-                    fitness, coordination, and self-discipline while teaching
-                    practical self-defense techniques. Beyond the physical
-                    benefits, MMA encourages confidence, resilience, and a
-                    positive mindset, as kids learn to set goals, handle
-                    challenges, and respect themselves and others. At Warrior
-                    Club, our kid-friendly MMA program focuses on fun, safety,
-                    and personal growth, empowering children to unlock their
-                    potential while making friends and staying active!
-                  </p>
+                  <div class="hover-content">
+                    <p class="discipline-description">
+                      Learn technique and discipline from expert instructors
+                    </p>
+                    <span class="cta-button">Explore Program →</span>
+                  </div>
                 </div>
               </div>
             </a>
@@ -837,23 +757,38 @@
     <style>
       .discipline_section {
         position: relative;
-        background-color: #212120;
-        padding: 60px 0;
+        background: linear-gradient(45deg, #1a1a1a, #212120);
+        padding: 20px 0;
       }
 
       .heading_container h2 {
-        color: #ffffff;
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 40px;
+        position: relative;
+        display: inline-block;
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: linear-gradient(45deg, #00ffcc, #00ccaa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       .discipline-wrapper {
-        border: 2px solid #00ffcc;
-        padding: 15px;
-        background-color: #1a1a1a;
+        border: 2px solid rgba(0, 255, 204, 0.3);
+        padding: 20px;
+        background: linear-gradient(145deg, #1a1a1a, #151515);
         margin: 15px;
-        border-radius: 8px;
+        border-radius: 12px;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 10px 30px rgba(0, 255, 204, 0.1);
+      }
+
+      .discipline-wrapper:hover {
+        transform: translateY(-5px);
+        border-color: #00ffcc;
+        box-shadow: 0 15px 40px rgba(0, 255, 204, 0.2);
       }
 
       .discipline-item {
@@ -861,43 +796,94 @@
         flex-direction: column;
         height: 100%;
         text-align: center;
-        background-color: #202020;
+        background: #202020;
         border-radius: 10px;
         overflow: hidden;
+        position: relative;
         transition: transform 0.3s ease;
       }
 
-      .discipline-item:hover {
-        transform: scale(1.03);
+      .image-container {
+        padding: 15px;
+        position: relative;
+        overflow: hidden;
       }
 
       .discipline-item img {
-        width: 100%;
-        height: auto;
+        width: 60%;
+        height: 350px;
         object-fit: cover;
+        margin: 0 auto;
+        border-radius: 8px;
+        transition: all 0.4s ease;
+        border: 2px solid rgba(0, 255, 204, 0.2);
+      }
+
+      .discipline-item:hover img {
+        transform: scale(1.05);
+        border-color: #00ffcc;
       }
 
       .discipline-detail {
-        padding: 20px;
+        padding: 25px;
+        position: relative;
       }
 
       .discipline-title {
-        font-size: 22px;
-        font-weight: bold;
+        font-size: 24px;
+        font-weight: 700;
         color: #00ffcc;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         font-family: "Orbitron", sans-serif;
+        text-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+      }
+
+      .hover-content {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s ease;
+      }
+
+      .discipline-wrapper:hover .hover-content {
+        opacity: 1;
+        transform: translateY(0);
       }
 
       .discipline-description {
         font-size: 16px;
         line-height: 1.6;
         color: #cccccc;
+        margin-bottom: 15px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 8px 20px;
+        background: rgba(0, 255, 204, 0.1);
+        color: #00ffcc;
+        border-radius: 5px;
+        font-family: "Orbitron", sans-serif;
+        transition: all 0.3s ease;
+        border: 1px solid #00ffcc;
+      }
+
+      .cta-button:hover {
+        background: #00ffcc;
+        color: #1a1a1a;
       }
 
       @media (max-width: 768px) {
+        .heading_container h2 {
+          font-size: 2.2rem;
+        }
+
         .discipline-wrapper {
           margin: 10px;
+          padding: 15px;
+        }
+
+        .discipline-item img {
+          height: 160px;
         }
       }
     </style>
