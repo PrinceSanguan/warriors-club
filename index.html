@@ -350,7 +350,10 @@
                         Jiu-Jitsu, Grappling, Wrestling, and Mixed Martial Arts.
                       </p>
                       <div class="btn-box">
-                        <a href="mailto:info@warriorclubuk.com" class="btn1">
+                        <a
+                          href="https://api.leadconnectorhq.com/widget/form/rO5is9QFlqiLN73yOiTG"
+                          class="btn1"
+                        >
                           Contact Us
                         </a>
                       </div>
@@ -897,6 +900,13 @@
         <div class="coach-cards">
           <!-- Head Coach -->
           <div class="coach-card head-coach">
+            <div class="coach-image">
+              <img
+                src="/assets/coaches/sam.webp"
+                alt="Sam Townend - Head Coach"
+                class="coach-photo"
+              />
+            </div>
             <h3 class="coach-name">Sam Townend</h3>
             <p class="coach-position">Head Coach</p>
             <p class="coach-description">
@@ -912,6 +922,13 @@
           </div>
 
           <div class="coach-card">
+            <div class="coach-image">
+              <img
+                src="/assets/coaches/daniel.webp"
+                alt="Dan Loucas"
+                class="coach-photo"
+              />
+            </div>
             <h4 class="coach-name">Dan Loucas</h4>
             <p class="coach-description">
               Dan specializes in self-defense and fitness. With years of
@@ -920,6 +937,13 @@
             </p>
           </div>
           <div class="coach-card">
+            <div class="coach-image">
+              <img
+                src="/assets/coaches/jack.webp"
+                alt="Jack Cooper"
+                class="coach-photo"
+              />
+            </div>
             <h4 class="coach-name">Jack Cooper</h4>
             <p class="coach-description">
               Jack is a martial arts expert focusing on technique and
@@ -984,6 +1008,25 @@
         text-align: center;
       }
 
+      .coach-image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 15px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .coach-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .head-coach .coach-image {
+        width: 200px;
+        height: 200px;
+      }
+
       .coach-card.head-coach {
         flex-basis: 100%;
         max-width: 100%;
@@ -1032,6 +1075,14 @@
       @media (max-width: 768px) {
         .coach-card:not(.head-coach) {
           flex: 0 1 calc(50% - 30px);
+        }
+        .coach-image {
+          width: 120px;
+          height: 120px;
+        }
+        .head-coach .coach-image {
+          width: 160px;
+          height: 160px;
         }
       }
 
