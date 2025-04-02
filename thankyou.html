@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags updated for thank-you page -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="Martial Arts Form Submission, Warrior Club Thank You, Mirfield Martial Arts"
+    />
+    <meta
+      name="description"
+      content="Thank you for contacting Warrior Club Martial Arts in Mirfield. We'll respond to your inquiry shortly."
+    />
+    <title>Thank You - Warrior Club Martial Arts</title>
+
+    <!-- Favicon and existing DNS/preconnect links -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Existing CSS links -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/responsive.css" rel="stylesheet" />
+
+    <!-- Open Graph updates -->
+    <meta property="og:title" content="Thank You - Warrior Club Martial Arts" />
+    <meta property="og:image" content="assets/images/thank-you-banner.jpg" />
+    <meta
+      property="og:url"
+      content="https://www.warriorclubuk.com/thank-you.html"
+    />
+    <meta
+      property="og:description"
+      content="Thank you for contacting Warrior Club Martial Arts. Your form submission has been received."
+    />
+    <style>
+      /* Custom thank-you page animations */
+      .checkmark-circle {
+        animation: scaleIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      }
+
+      @keyframes scaleIn {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .thank-you-section {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        padding: 4rem 0;
+        color: #ffffff; /* Added white text color */
+      }
+
+      .redirect-countdown {
+        font-size: 0.9em;
+        margin-top: 1.5rem;
+        color: rgba(255, 255, 255, 0.8); /* Changed to white with opacity */
+      }
+
+      /* Ensure all text in the section is white */
+      .thank-you-section h1,
+      .thank-you-section p,
+      .thank-you-section .btn-outline-secondary {
+        color: #ffffff;
+      }
+
+      /* Border color for outline button */
+      .thank-you-section .btn-outline-secondary {
+        border-color: #ffffff;
+      }
+
+      /* Hover effect for outline button */
+      .thank-you-section .btn-outline-secondary:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero_area">
+      <div class="hero_bg_box"></div>
+
+      <!-- Include your standard header here -->
+      <!-- Header content from original template -->
+
+      <!-- Thank You Content Section -->
+      <section class="thank-you-section">
+        <div class="container text-center">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="checkmark-circle mb-4">
+                <i
+                  class="fa fa-check-circle text-success"
+                  style="font-size: 6rem"
+                ></i>
+              </div>
+              <h1 class="mb-3">Thank You!</h1>
+              <p class="lead">
+                Your form submission has been successfully received. Our team at
+                Warrior Club will review your message and respond within 24-48
+                hours. In the meantime, why not check out our latest class
+                schedule?
+              </p>
+
+              <div class="mt-5">
+                <a href="index.html" class="btn btn-outline-secondary btn-lg">
+                  Return Home
+                </a>
+              </div>
+
+              <div class="redirect-countdown">
+                You will be automatically redirected to our homepage in
+                <span id="countdown">5</span> seconds
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Include your standard footer here -->
+    <!-- Footer content from original template -->
+
+    <!-- Existing JS dependencies -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Thank You Page Specific Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Countdown timer for redirect
+        let seconds = 5;
+        const countdownElement = document.getElementById("countdown");
+
+        const countdownInterval = setInterval(() => {
+          seconds--;
+          countdownElement.textContent = seconds;
+
+          if (seconds <= 0) {
+            clearInterval(countdownInterval);
+            window.location.href = "index.html";
+          }
+        }, 1000);
+
+        // Add hover effect to checkmark
+        const checkmark = document.querySelector(".fa-check-circle");
+        checkmark.addEventListener("mouseover", () => {
+          checkmark.style.transform = "scale(1.1)";
+          checkmark.style.transition = "transform 0.3s ease";
+        });
+
+        checkmark.addEventListener("mouseout", () => {
+          checkmark.style.transform = "scale(1)";
+        });
+      });
+    </script>
+  </body>
+</html>
