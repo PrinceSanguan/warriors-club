@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    {
+      "source": "/thankyou",
+      "destination": "/thankyou.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/thankyou.html",
+      "destination": "/thankyou",
+      "permanent": true
+    }
+  ]
+}
