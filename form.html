@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="Martial Arts Registration, Warrior Club Signup, Mirfield Martial Arts Form"
+    />
+    <meta
+      name="description"
+      content="Join Warrior Club Martial Arts in Mirfield. Submit your enquiry form to start your martial arts journey."
+    />
+    <title>Enquiry Form - Warrior Club Martial Arts</title>
+
+    <!-- Favicon and existing DNS/preconnect links -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Existing CSS links -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/responsive.css" rel="stylesheet" />
+
+    <style>
+      .form-section {
+        min-height: 100vh;
+        padding: 4rem 0;
+        color: #ffffff;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("assets/images/form-bg.jpg") center/cover;
+      }
+
+      .form-header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      .form-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 2rem;
+        backdrop-filter: blur(5px);
+      }
+
+      .form-iframe {
+        width: 100%;
+        height: 907px;
+        border: none;
+        border-radius: 3px;
+      }
+
+      @media (max-width: 768px) {
+        .form-section {
+          padding: 2rem 0;
+        }
+
+        .form-iframe {
+          height: 700px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .form-container {
+          padding: 1rem;
+        }
+
+        .form-iframe {
+          height: 600px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="hero_area">
+      <div class="hero_bg_box"></div>
+
+      <!-- Include your standard header here -->
+      <!-- Header content from original template -->
+
+      <!-- Form Section -->
+      <section class="form-section">
+        <div class="container">
+          <div class="form-header">
+            <h1>Start Your Journey</h1>
+            <p class="lead">
+              Fill out the form below to begin your martial arts training with
+              Warrior Club
+            </p>
+          </div>
+
+          <div class="form-container">
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/rO5is9QFlqiLN73yOiTG"
+              class="form-iframe"
+              id="inline-rO5is9QFlqiLN73yOiTG"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Worrior Club Official Enquiry Form"
+              data-layout-iframe-id="inline-rO5is9QFlqiLN73yOiTG"
+              data-form-id="rO5is9QFlqiLN73yOiTG"
+              title="Worrior Club Official Enquiry Form"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Include your standard footer here -->
+    <!-- Footer content from original template -->
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+
+    <script>
+      // Adjust iframe height on mobile
+      function adjustIframeHeight() {
+        const iframe = document.querySelector(".form-iframe");
+        if (window.innerWidth <= 480) {
+          iframe.style.height = "500px";
+        } else if (window.innerWidth <= 768) {
+          iframe.style.height = "600px";
+        } else {
+          iframe.style.height = "907px";
+        }
+      }
+
+      window.addEventListener("resize", adjustIframeHeight);
+      adjustIframeHeight(); // Initial call
+    </script>
+  </body>
+</html>
